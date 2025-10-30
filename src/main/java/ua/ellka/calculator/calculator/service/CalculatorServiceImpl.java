@@ -23,7 +23,7 @@ public class CalculatorServiceImpl implements CalculatorService {
     @Override
     public int divide(int a, int b) {
         if (b == 0) {
-            throw new IllegalArgumentException("Cannot divide by zero");
+            return 0;
         }
         return a / b;
     }
